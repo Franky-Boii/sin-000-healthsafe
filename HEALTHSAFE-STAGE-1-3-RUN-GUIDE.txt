@@ -4,7 +4,7 @@ STAGE 1-3 TEST RUN GUIDE
 
 Run these commands from the repository root.
 
-  cd /Users/forexc.e.o/Desktop/sin-000-healthsafe
+  cd ~/Desktop/sin-000-healthsafe
 
 
 1. RUN AUTOMATED TESTS
@@ -29,7 +29,7 @@ Every service should finish with: BUILD SUCCESS
 3. START ACTIVEMQ FOR STAGE 3
 -----------------------------
 
-  cd /Users/forexc.e.o/Desktop/sin-000-healthsafe/common
+  cd ~/Desktop/sin-000-healthsafe/common
   docker compose up -d
   docker compose ps
 
@@ -46,22 +46,22 @@ Open four terminal windows.
 
 Terminal 1 - ingestion service:
 
-  cd /Users/forexc.e.o/Desktop/sin-000-healthsafe/ingestion-service
+  cd ~/Desktop/sin-000-healthsafe/ingestion-service
   java -jar target/ingestion-service.jar
 
 Terminal 2 - ward service:
 
-  cd /Users/forexc.e.o/Desktop/sin-000-healthsafe/ward-service
+  cd ~/Desktop/sin-000-healthsafe/ward-service
   java -jar target/ward-service.jar
 
 Terminal 3 - alert-level service:
 
-  cd /Users/forexc.e.o/Desktop/sin-000-healthsafe/alert-level-service
+  cd ~/Desktop/sin-000-healthsafe/alert-level-service
   java -jar target/alert-level-service.jar
 
 Terminal 4 - staffing service:
 
-  cd /Users/forexc.e.o/Desktop/sin-000-healthsafe/staffing-service
+  cd ~/Desktop/sin-000-healthsafe/staffing-service
   java -jar target/staffing-service.jar
 
 
@@ -157,7 +157,5 @@ Stop the running Java services with Ctrl+C in each service terminal.
 
 Stop ActiveMQ:
 
-  cd /Users/forexc.e.o/Desktop/sin-000-healthsafe/common
+  cd ~/Desktop/sin-000-healthsafe/common
   docker compose down
-
-WTC-RSMYUB9M
